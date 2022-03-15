@@ -4,7 +4,7 @@ import { ethers } from "hardhat";
 async function main() {
   // const [owner, randomPerson] = await ethers.getSigners();
   const domainContractFactory = await ethers.getContractFactory("Domains");
-  const domainContract = await domainContractFactory.deploy("ninja");
+  const domainContract = await domainContractFactory.deploy("anime");
   await domainContract.deployed();
 
   console.log("Contract deployed to:", domainContract.address);
